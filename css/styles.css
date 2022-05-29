@@ -15,8 +15,45 @@ body {
   color: var(--primary-text-color);
   background-color: var(--bg-page-colour);
 }
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
+  padding-left: 15px;
+  padding-right: 15px;
+  /* outline: 2px solid green; */
+}
+
+ h1,
+ h2,
+ h3,
+ p,
+ ul {
+   margin-top: 0;
+   margin-bottom: 0;
+   padding: 0;
+ }
+
 
 /* хэдер */
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+.site-nav-item + .site-nav-item {
+  margin-left: 50px;
+}
+
+.site-nav-item:last-child {
+  margin-right: 0;
+}
+
 .logo {
   color: var(--title-text-color);
   font-family: Raleway, sans-serif;
@@ -25,6 +62,7 @@ body {
   line-height: 1.19;
   text-decoration: none;
 }
+
 .logo-web {
   color: var(--accent-colour);
   font-family: Raleway, sans-serif;
@@ -33,6 +71,7 @@ body {
   line-height: 1.19;
   text-decoration: none;
 }
+
 .logo:hover {
   color: var(--accent-colour);
 }
@@ -41,15 +80,31 @@ ul {
   list-style: none;
 }
 
+
 /* навигация сайта */
 .site-nav a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
   color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
   text-decoration: none;
 }
 
+.header-contacts {
+  display: flex;
+  margin-left: auto;
+}
+
+.header-contacts-item+.header-contacts-item{
+padding-left: 50px;
+}
+
 .header-contacts a {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px; 
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -67,27 +122,31 @@ ul {
   color: var(--accent-colour);
 }
 
+
 /* страница герой */
 .hero-page {
-  /* color: #FFFFFF; */
   background-color: #2f303a;
+  text-align: center;
 }
+
 .hero-title {
+  padding-top: 200px;
+  margin-bottom: 30px;
   color: var(--white-text-colour);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
+
+
 /* кнопка */
 .hero-button {
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
   align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
 }
@@ -103,13 +162,30 @@ ul {
   background-color: var(--bg-button-hover);
 }
 
+
 /* ключевые компетенции */
+.prefences-list {
+  display: flex;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.prefences-item {
+width: 270px;
+margin-right: 30px;
+}
+
+.prefences-item:last-child {
+  margin-right: 0;
+}
+
 .prefences-title {
-    color: var(--title-text-color);
+  margin-bottom: 10px;
+  color: var(--title-text-color);
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  text-align: center;
+  text-align: left;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
@@ -117,9 +193,9 @@ ul {
   line-height: 1.71;
 }
 
+
 /* чем мы занимаемся*/
-.about-title,
-.our-team-title {
+.about-title {
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -128,29 +204,78 @@ ul {
   letter-spacing: 0.03em;
 }
 
+.our-team-title {
+  padding-top: 94px;
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+.about-list {
+  display: flex;
+  margin-top: 50px;
+  padding-bottom: 94px;
+}
+
+.about-list-item {
+  margin-right: 30px;
+}
+
+.about-list-item:last-child {
+  margin-right: 0;
+}
+
+
 /* наша команда */
 .our-team {
   background-color: var(--bg-button-portfolio);
 }
+
 .our-team-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  padding-bottom: 94px;
+}
+
+.our-team-item {
+  width: 270px;
+  margin-right: 30px;
   background-color: var(--white-text-colour);
 }
 
+.our-team-item:last-child {
+  margin-right: 0;
+}
+
 .our-team .name {
+  margin-top: 30px;
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
 }
+
 .our-team p {
+  margin-top: 10px;
+  padding-bottom: 30px;
   font-size: 16px;
   line-height: 1.18;
+  text-align: center;
 }
+
 
 /* футер */
 .futer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
 }
+
 .logo-1 {
   color: var(--white-text-colour);
   font-family: Raleway, sans-serif;
@@ -160,6 +285,7 @@ ul {
   text-decoration: none;
   letter-spacing: 0.03em;
 }
+
 .logo-web {
   color: var(--accent-colour);
   font-family: Raleway, sans-serif;
@@ -177,27 +303,56 @@ ul {
 }
 
 .futer a {
+  display: inline-block;
   text-decoration: none;
   font-style: normal;
 }
 
 .futer-adress a {
+  margin-top: 20px;
   color: var(--white-text-colour);
   line-height: 1.71;
 }
 
 .futer-mail a {
-  color: var(--futer-mail-tel)
-  line-height: 1.71;
-}
-.futer-tel a {
+  margin-top: 9px;
   color: var(--futer-mail-tel)
   line-height: 1.71;
 }
 
+.futer-tel a {
+  margin-top: 9px;
+  color: var(--futer-mail-tel)
+  line-height: 1.71;
+}
+
+
+
 /* страница портфолио */
 .portfolio-main {
   background-color: var(--white-text-colour);
+}
+
+.main-list {
+  display: flex;
+  justify-content: center;
+  padding-top: 94px;
+}
+
+.main-list-projects {
+  padding-top: 34px;
+}
+
+.main-list-item {
+  margin-right: 8px;
+}
+
+.main-list-item:last-child {
+  margin-right: 0;
+}
+
+.container.portfolio {
+  margin-bottom: 94px;
 }
 
 .main-list button {
@@ -210,25 +365,50 @@ ul {
   text-align: center;
   letter-spacing: 0.03em;
 }
+
 .main-list button:hover,
 .main-list button:focus {
   color: var(--white-text-colour);
   background-color: var(--accent-colour);
 }
+
+.main-list-projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 a {
   text-decoration: none;
 }
+
 .main-list-projects-items {
+  width: calc((100%-60px) / 3);
+  margin-bottom: 30px;
+
   background-color: var(--white-text-colour);
 }
+
+.main-list-projects-items:nth-child(3n) {
+margin-right: 0;
+}
+
+.main-list-projects-items:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
 .main-project-name {
+  margin-left: 24px;
+  margin-right: 24px;
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
 }
+
 .main-project-group {
+  margin-left: 24px;
+  margin-right: 24px;
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.88;
