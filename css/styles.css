@@ -1,0 +1,236 @@
+:root {
+  --primary-text-color: #757575;
+  --title-text-color: #212121;
+  --accent-colour: #2196f3;
+  --white-text-colour: #ffffff;
+  --bg-page-colour: #ffffff;
+  --bg-button-hover: #188ce8;
+  --bg-button-portfolio: #f5f4fa;
+  --futer-mail-tel: rgba(255, 255, 255, 0.6)
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  color: var(--primary-text-color);
+  background-color: var(--bg-page-colour);
+}
+
+/* хэдер */
+.logo {
+  color: var(--title-text-color);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.logo-web {
+  color: var(--accent-colour);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+}
+.logo:hover {
+  color: var(--accent-colour);
+}
+
+ul {
+  list-style: none;
+}
+
+/* навигация сайта */
+.site-nav a {
+  color: var(--title-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  text-decoration: none;
+}
+
+.header-contacts a {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  line-height: 1.14;
+  text-decoration: none;
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus,
+.link:hover,
+.link:focus {
+  color: var(--accent-colour);
+}
+
+.site-nav .link.current {
+  color: var(--accent-colour);
+}
+
+/* страница герой */
+.hero-page {
+  /* color: #FFFFFF; */
+  background-color: #2f303a;
+}
+.hero-title {
+  color: var(--white-text-colour);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+/* кнопка */
+.hero-button {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+}
+
+.hero-button {
+  color: var(--bg-page-colour);
+  background-color: var(--accent-colour);
+  cursor: pointer;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--bg-button-hover);
+}
+
+/* ключевые компетенции */
+.prefences-title {
+    color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.prefences p {
+  line-height: 1.71;
+}
+
+/* чем мы занимаемся*/
+.about-title,
+.our-team-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+
+/* наша команда */
+.our-team {
+  background-color: var(--bg-button-portfolio);
+}
+.our-team-list {
+  background-color: var(--white-text-colour);
+}
+
+.our-team .name {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+}
+.our-team p {
+  font-size: 16px;
+  line-height: 1.18;
+}
+
+/* футер */
+.futer {
+  background-color: #2f303a;
+}
+.logo-1 {
+  color: var(--white-text-colour);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+.logo-web {
+  color: var(--accent-colour);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+}
+
+.logo-1:hover,
+.futer .link:hover,
+.futer .link:focus {
+  color: var(--accent-colour);
+}
+
+.futer a {
+  text-decoration: none;
+  font-style: normal;
+}
+
+.futer-adress a {
+  color: var(--white-text-colour);
+  line-height: 1.71;
+}
+
+.futer-mail a {
+  color: var(--futer-mail-tel)
+  line-height: 1.71;
+}
+.futer-tel a {
+  color: var(--futer-mail-tel)
+  line-height: 1.71;
+}
+
+/* страница портфолио */
+.portfolio-main {
+  background-color: var(--white-text-colour);
+}
+
+.main-list button {
+  color: var(--title-text-color);
+  background-color: var(--bg-button-portfolio);
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.main-list button:hover,
+.main-list button:focus {
+  color: var(--white-text-colour);
+  background-color: var(--accent-colour);
+}
+a {
+  text-decoration: none;
+}
+.main-list-projects-items {
+  background-color: var(--white-text-colour);
+}
+.main-project-name {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+.main-project-group {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+}
